@@ -1,0 +1,48 @@
+html, body{
+
+    height: 100%;
+    overflow: auto;
+    font-family: Arial, sans-serif;
+    background-image: url("../static/images/systems2.png");
+    background-size: cover;
+    background-repeat: no repeat;
+    background-position: center center;
+
+}
+
+h2{
+    width: 100%;
+    font-size: xx-large;
+    margin-top: 150px;
+    margin-left: 90px;
+    font-weight: bold;
+    color: rgb(255, 253, 253);
+}
+
+p{
+    width: 100%;
+    margin-left: 90px;
+    color: rgb(222, 216, 226);
+    text-indent: 50px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+#videoObject{
+     margin-top: -120px;
+     margin-left:800px;
+
+}
+
+#videoObject2{
+    margin-top: -170px;
+    margin-left:1000px;
+
+}
+
+
+
+#videoObject3{
+    margin-top: -120px;
+    margin-left:1000px;
+
+}

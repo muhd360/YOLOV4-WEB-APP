@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <!--LINK CSS-->
+    <!--<link rel="stylesheet" href="../css/main.css">-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+
+
+
+    </head>
+
+<body>
+
+  
+<!--TOP NAV BAR-->
+<div class="topnav">
+    <a href="#home">Home</a>
+    
+    <a href="#news">Insights & News</a>
+    
+    <!--ADD FUNCTUION NAME WHICH IS INTIAILIZED ON FLASK-->
+    <a href="{{ url_for('system_works') }}">How systems works</a>
+
+      <!--ADD FUNCTUION NAME WHICH IS INTIAILIZED ON FLASK-->
+    <a href="{{ url_for('dl_inference') }}">DL Inference</a>
+
+    <a href="{{ url_for('dl_image_inference') }}">DL Batch Inference</a>
+
+    <a href="{{ url_for('about_me') }}">About</a>
+
+  </div>
+  <!--LOGIN PAGE NAVIGATION-->
+
+  <form action="/Web_Dev_AI/sign">
+    <button id="loginButton" style="font-size: medium; font-weight: bold;">Login</button>
+  </form>
+ 
+  
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+   
+      <img src="{{ url_for('static', filename='images/deep1.png') }}">
+    
+    </div>
+    
+    <div class="mySlides fade">
+    
+      <img src="{{ url_for('static', filename='images/ai.png') }}">
+     
+    </div>  
+    
+    <div class="mySlides fade">
+     
+      <img src="{{ url_for('static', filename='images/deep3.png') }}">
+    
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+  
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+  
+
+    
+</html>  

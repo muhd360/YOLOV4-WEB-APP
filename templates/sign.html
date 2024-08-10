@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   
+
+    <!--LINK CSS -->
+    <!--<link rel="stylesheet" href="../css/signin.css">--> <!-- Linking to the external CSS file -->
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    
+    <!--ICON FONTS AWESOME--->
+    <link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='sign.css') }}"><!-- Linking to the external CSS file -->
+  
+  </head>
+
+<body>
+  <!--CONTAINER-->
+  <div class="container"> <!--div container starts-->
+    <div class="title-container">
+      <h2>Sign In Deep Learning Inference</h2>
+
+    <form method="post" data-main-url = "{{url_for('main')}}">
+      <div class="form-together">
+
+        <div class="form-group2">
+            <label for="username" id="label-username">USERNAME</label>
+            <input type="text" name="username" class="form-control" id="username" placeholder="Enter Username">
+        </div> <!--Form group 1 finished-->
+
+        <div class="form-group">
+            <label for="pwd" id="label-password">PASSWORD</label>
+            <input type="password" name="password" class="form-control" id="password" placeholder="Enter password">
+            <i class="bi bi-eye-slash" id="togglePassword"></i>
+        </div> <!--Form group 2 finished-->
+      
+      </div>
+       
+
+        <div class="all-container">
+      
+          <button type="submit" class="btn btn-default" id="alert-button">Submit</button>
+      
+        </div>
+
+        <div class="message-containers">
+          <div id = "successMessage" class="alert alert-success" style="display:none;"> </div>
+          <div id = "errorMessage" class="alert alert-danger" style="display:none;"> </div>
+       </div>
+    
+    </form>
+
+    <div>
+    <form action="/Web_Dev_AI/registration">
+      <button id="registerButton">
+          You dont have account yet??
+      </button>
+    </form>
+  </div>
+
+
+ 
+     <div class="returnToHome">
+      <a href="/Web_Dev_AI/main">
+        <i class="fa-solid fa-person-walking-arrow-loop-left" style="color: #638f14;"> Return to Home</i>
+
+      </a>
+    </div>
+   
+
+   
+</div>
+
+  <!--SCRIPT NODES-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="{{url_for('static', filename='js/sign.js')}}"></script>
+
+</body>
+
+</html>  

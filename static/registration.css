@@ -1,0 +1,78 @@
+
+html, body {
+    height: 100%;
+    overflow: hidden; /* Prevent scrollbars from appearing outside the textarea */
+    font-family: Arial, sans-serif; /* Optional: choose any font family you like */ 
+    background-color: rgba(73, 32, 124, 0.107);
+
+}
+.container h2{
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.rectangle{
+    max-width: 100%;
+    height: 50%;
+    background-color: rgb(255, 254, 253);
+}
+
+.form-group{
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#usr {
+    width: 50%;
+    border-radius: 2px;
+}
+
+#email {
+    width: 50%;
+    border-radius: 2px;
+}
+
+#password {
+    width: 50%;
+    border-radius: 2px;
+}
+
+#password_confirm {
+    width: 50%;
+    border-radius: 2px;
+}
+
+.form-group-confirm{
+    margin-top: 20px;
+}
+
+.input-icon-container,
+.input-toggle-confirm{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+   
+}
+.input-toggle-confirm i,
+.input-icon-container i {
+    color: brown;
+    position: absolute;
+    align-content: center;
+   
+    transform: translateX(540px); 
+    cursor: pointer;
+
+}
+
+.registerToHome{
+    transform: translate(-200px);
+    margin-top: 4rem;
+    
+    
+}  

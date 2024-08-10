@@ -1,0 +1,6 @@
+Flask-Cors
+Flask-SQLAlchemy
+flask_jwt_extended
+python-decouple
+Flask-Migrate
+Werkzeug

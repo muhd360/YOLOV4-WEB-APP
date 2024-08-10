@@ -1,0 +1,138 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html, body {
+    height: 100%;
+    overflow: hidden; /* Prevent scrollbars from appearing outside the textarea */
+    font-family: Arial, sans-serif; /* Optional: choose any font family you like */
+    background-image:  url("../static/images/signin.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+.title-container{
+    font-weight: bold;
+    margin-top: -40px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+/* Making the textarea take the full viewport height */
+#fullPageTextarea {
+    width: 100%;
+    height: 100vh; /* Using vh (viewport height) units to ensure it's always 100% of the viewport height */
+    border: none;
+    resize: none;
+    outline: none; 
+    font-size: 1rem; /* Optional: Adjust the font size as needed */
+}
+
+table, th, td{
+
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+
+#togglePassword {
+    color: brown;
+    position: absolute;
+    right: 510px; /* adjust as necessary */
+    top: 50%;
+    transform: translateY(-10%);
+    transform: translateX(-460%);
+    cursor: pointer;
+}
+
+.form-group2{
+    display: flex;
+    flex-direction:  column;
+    position: relative;
+}
+
+.form-group2 #label-username{
+
+    transform: translate(-520px, 0px);
+    color: #173f55;
+}
+.form-group #label-password{
+    transform: translate(-520px, 0px);
+    color: #173f55;
+}
+.form-group {  
+    display: flex;
+    flex-direction:  column;
+    position: relative;
+    margin-top: 40px;
+}
+
+
+.form-together{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+
+}
+
+.container{
+    margin-top: 10%;
+}
+
+.form-group2 #username{
+
+    width:50%;
+    border-radius: 2px;
+    
+
+}
+
+#password{
+    width: 50%;
+    border-radius: 2px;
+}
+
+.message-containers{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    transform: translate(150px, 50px);
+}
+
+
+
+
+.all-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+#registerButton{
+
+    border: none;
+    border-radius: 8px;
+  
+    padding: 0 15px;
+    text-align: right;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transform: translate(-14rem, -8rem);
+    background-color: #81b4cf;
+  
+  }
+
+
+.returnToHome{
+    transform: translate(-700px);
+    
+    
+}  

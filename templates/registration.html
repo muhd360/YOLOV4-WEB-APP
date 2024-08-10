@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--LINK CSS -->
+    <!--<link rel="stylesheet" href="../css/signin.css"> --><!-- Linking to the external CSS file -->
+    <!--<link rel="stylesheet" href="../css/registration.css">-->
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='registration.css') }}"><!-- Linking to the external CSS file -->
+  
+
+</head>
+
+<body>
+
+  <!--CONTAINER-->
+  <div class="container">
+    <div class="rectangle">
+        <h2>Registration Form</h2>
+    </div>
+    <form method="post" data-sign-in-url="{{ url_for('sign') }}">
+        <div class="form-group">
+            <label for="usr">User Name</label>
+            <input type="text" name="username" class="form-control" id="usr" placeholder="Enter the user name">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" class="form-control" id="email" placeholder="Enter the mail">
+        </div>
+        <!--GROUP PASSWORD WITH TOGGGLE PASSWORD-->
+        <div class="form-group-passwrd">
+            <label for="password">Password:</label>
+            <div class="input-icon-container">
+                <input type="password" name = "password" class="form-control" id="password" placeholder="Enter the password">
+                <i class="bi bi-eye-slash" id="togglePassword"></i>
+            </div>
+        </div>
+        
+        <!--GROUP PASSWORD WITH CONFIRM TOGGGLE PASSWORD-->
+        <div class="form-group-confirm">
+            <label for="password_confirm">Repeat Password:</label>
+            <div class="input-toggle-confirm">
+                <input type="password" name="password_confirm" class="form-control" id="password_confirm" placeholder="Repeat the password">
+                <i class="bi bi-eye-slash" id="togglePasswordConfirm"></i>
+            </div>
+        </div>  
+
+        <div class="checkbox">
+            <label><input type="checkbox"> Remember me</label>
+        </div>
+
+        <button type="submit" class="btn btn-default" id="alert-button">Sign Up</button>
+
+       
+    </form>
+    <div id="signUpSuccess" class="alert alert-success" style="display:none;">
+          
+    </div>
+    <div id="signUpError" class="alert alert-danger" style="display:none">
+          <!-- Error message will be displayed here -->
+    </div>
+    
+
+
+    <div class="registerToHome">
+        <a href="/Web_Dev_AI/main">
+          <i class="fa-solid fa-person-walking-arrow-loop-left" style="color: #638f14;"> Return to Home</i>
+  
+        </a>
+      </div>
+     
+</div>
+
+
+    <!--SCRIPT NODES-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="{{url_for('static', filename='js/registration.js')}}"></script>
+</body>
+
+</html>  

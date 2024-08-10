@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+       <!-- <link rel="stylesheet" href="../css/dl_image_inference.css">-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='dl_image_inference.css') }}">
+        <!-- Bootstrap CSS FOR TEXT INPUT-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+         <!--ICON FONTS AWESOME--->
+    <link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+        <link rel="stylesheet" href="/static/dl_image_inference.css">
+    </head>
+
+    <body onload="animate_title('target')">
+  
+        <div id="sidebar">
+            <div class="DLToHome">
+                <a href="/Web_Dev_AI/main">
+                  <i class="fa-solid fa-person-walking-arrow-loop-left" style="color: #638f14;"> Return to Home</i>
+                </a>
+              </div>
+            <ul class="nav flex-column">
+                
+            
+            </ul>
+        </div>
+        <pre id="target" >Object Detectio WEB </pre>
+            <!-- Image element where the uploaded image will be displayed class="rounded float-left img-fluid-->
+
+                {% if upload %}
+            <div class="container-image">
+                <table id="tableID">
+                    <tr>
+                        <!-- Raw Image -->
+                        {% if upload_image %}
+                            <td>
+                                <div class="image-label-raw">Raw Image</div>
+                                <img id="image_id" src="/static/{{ upload_image[0] }}" alt="Raw Image">
+                            </td>
+                        {% endif %}
+
+                        <!-- Predicted Image -->
+                        {% if upload_image|length > 1 %}
+                            <td>
+                                <div class="image-label-predicted">Predicted Image</div>
+                                <img id="image_id_predicted" src="/static/{{ upload_image[1] }}" alt="Predicted Image">
+                            </td>
+                        {% endif %}
+                    </tr>
+                </table>
+            </div>
+        {% endif %}
+
+  
+             <div class="container-buttons">
+                <br> <br>
+                        
+                <form action="/Web_Dev_AI/dl-image-inference" method ="post" enctype="multipart/form-data">
+        
+                    <label for="myfile" style="font-size: 20px;">Select Image: </label>
+        
+                    <input type="file" id="myfile" name="image_name" onchange="showImageName()" required><!--accept=".png, .jpg, .jpeg"- onchange="showImageName()"-->
+                   
+                    <input type="submit" value="Upload Image" id="sbt">
+                    
+                    <div id="getName"></div> <!--GET FILE NAME-->
+                    
+                    <div id="successImage" class="alert alert-success" style="display:none;">
+                        SuccessFully Image Upload!
+                    </div>
+        
+                    <div id="errorImage" class="alert alert-warning" style="display:none;"> <!--BOOTSTRAP-->
+                       Warning Image Upload Failed!
+                    </div>
+                    <input type="text" name="search" placeholder="Text ...">
+                </form> 
+               
+             </div>
+           
+     
+        <script src="{{ url_for('static', filename='js/dl_image_inference.js') }}"></script> 
+    
+    </body>
+
+   
+
+  
+
+
+</html>

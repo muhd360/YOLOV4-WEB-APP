@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #636363;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  /*  backgrou  nd-color: #e7e7e7;*/
+  }
+  
+  .topnav a {
+    float: none;
+    color: #130c0c;
+    text-align: center  ;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+  }
+  
+  .topnav a:hover {
+    background-color: #d7afaf;
+    color: black;
+  }
+  
+  * {box-sizing: border-box;}
+  body {font-family: Verdana, sans-serif;}
+  .mySlides {display: none;}
+  img {vertical-align: middle;}
+  
+  /* Slideshow container */
+  .slideshow-container {
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+
+img[src$=".png"] {
+    width: 100%;
+    height: 750px;
+}
+
+/*LOGIN BUTTON */
+#loginButton {
+ /* background-color: #571946fc; /* Green */
+  border: none;
+  border-radius: 8px;
+  padding: 0 15px;
+  text-align: right;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+
+  top:0; /*ALIGN TOP*/
+  right:0;
+  margin-right: 30px;
+  margin-top: 15px;
+
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: medium;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(91, 91, 97);
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: darkblue;
+}

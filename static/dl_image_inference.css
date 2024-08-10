@@ -1,0 +1,174 @@
+html,body{
+
+    height: 100%;
+   
+}
+
+
+/* Style the label to look like a button */
+label[for="myfile"] {
+    padding: 5px;
+    background-color: #d43200; /* Choose your color */
+    color: white;
+    border-radius: 10px; /* Adjust as needed */
+    cursor: pointer;
+    height:40px;
+    
+}
+#sbt{
+    border-radius: 45px;
+    background: #8b9281;
+    padding: 10px;
+    width: 120px;
+    height: 40px;  
+   
+}
+
+/*HIDE DEFAUL;T INPIT*/
+input[type="file"]{
+    display: none;
+}
+
+input[type=submit] {
+    background-color: #ae8181;
+    border: none;
+    color: rgb(252, 243, 243);
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+
+.container-buttons {
+    position: fixed; /* Fixed position relative to the viewport */
+    bottom: 0; /* Align to the bottom of the viewport */
+    width: 100%; /* Stretch across the full width */
+    z-index: 10; /* Ensure it's on top of other content */
+    background-color: #f3f3f3; /* Optional: background color */
+    text-align: center;
+    padding: 10px 0; /* Optional: add some padding */
+}
+/*TEXT BOX*/
+input#textBox {
+    margin-left: 230px;
+    margin-right: 50px;
+    margin-top: 300px;
+}
+
+
+/*RAW IMAGE ID */
+#image_id{
+    width: 410px;
+    height: 360px;
+    top: 0px;
+    display: block;
+    left:0px;
+    transform: translate(0px, -40px);
+   
+}
+/*PREDICTED IMAGE ID */
+#image_id_predicted{
+    width: 410px;
+    height: 360px;
+    top: 0px;
+    display: block;
+    left:0px;
+    margin-left:130px;
+    transform: translate(0px, -40px);
+    
+}
+/*image container*/
+.container-image {
+    background: #bebcbc;
+    max-width: 1000px;
+    max-height: 400px;
+  /*  margin-left: 30px;*/
+    margin: 30px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+/*IMAGE LABELS*/
+.image-label-raw{
+    text-align: left;
+    font-weight: bold;
+    margin-left: 130px;
+    
+    transform: translate(0px, -50px);
+    color:  #bebcbc;
+    font-style: italic;
+    font-size: 20px;
+    
+    
+   
+}
+.image-label-predicted{
+    text-align: right;
+    font-weight: bold;
+    margin-right: 130px;
+    font-style: italic;
+    transform: translate(0px, -50px);
+    color: #bebcbc;
+    font-size: 20px;
+}
+input[type=text] {
+    width: 57%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    padding: 12px 20px 12px 40px;
+  }
+
+  /*TARGET ROTATE TEXT*/
+#target{
+
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(22, 6, 6)10;
+    margin-left: 350px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+}
+
+#getName{
+
+    transform: translate(0px, -100px);
+    color: #ae8181;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/*SIDE BAR*/
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 300px;
+    background: hwb(60 1% 96% / 0.878);
+    color: white;
+    z-index: 1000;
+}
+
+#sidebar ul {
+    padding: 0px;
+    list-style-type: none;
+}
+
+#sidebar ul li {
+    padding: 12px;
+}
+
+#sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    background-color: #575757;
+}
