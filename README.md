@@ -1,11 +1,5 @@
 ## Full Stack Webb APP Development
 
-
-#### View DEMO or Prototype via link:
-
-["Web APP Object Detection"](https://youtu.be/DPW319gWQbU)
-
-
 #### Project Root data structure
 
 ```shell
@@ -41,6 +35,7 @@ $ pip install -r requirements.txt
 ```shell
 $ python3 server_dev_db.py
 ```
+END
 
 ### Note:
 Please first insert all images or icons to static/images folder , before running application. Please, also add pretrained models to models folders, before running an application!
