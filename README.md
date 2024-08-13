@@ -2,8 +2,6 @@
 
 #### Project Root data structure
 
-```shell
-root@dd167f326b80:/tensorfl_vision/Web_Dev_AI# tree -d
 .
 ├── Images
 ├── __pycache__
