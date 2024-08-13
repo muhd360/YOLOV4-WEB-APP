@@ -43,9 +43,8 @@ class yolov7_json_handle:
         CORS(self.app)      
         
         # creata user table
-      
         
-        self.UPLOAD_FOLDER = 'static/uploads/'
+        self.UPLOAD_FOLDER = self.static_folder
         
         # app config
         self.app.config['UPLOAD_FOLDER'] = self.UPLOAD_FOLDER
@@ -53,7 +52,6 @@ class yolov7_json_handle:
         
         self.uploaded_file_path = None
         self.last_uploaded_files = []
-        self.uploaded_file_path = None 
         
         
         self.ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
@@ -195,6 +193,7 @@ class yolov7_json_handle:
                 file_path = os.path.join(self.app.config['UPLOAD_FOLDER'], filename)
                 
                 file.save(file_path)
+                print("FILE PATH is", file_path)
                # print('**************',file_path, filename)
                 processor_inference = Yolov7Processor(0.3, 0.38, self.path_to_classes, file_path, self.path_to_cfg_yolov7, self.path_to_weight_yolov7,
                                                       single_image=True)
