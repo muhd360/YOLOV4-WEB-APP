@@ -2,8 +2,9 @@
 
 #### Project Root data structure
 
+
+```
 shell
-'''
 ├── Images
 ├── __pycache__
 ├── models
@@ -12,7 +13,7 @@ shell
 │   ├── js
 │   └── uploads
 └── templates
-'''
+```
 10 directories
 ```
 
