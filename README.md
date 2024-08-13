@@ -2,7 +2,7 @@
 
 #### Project Root data structure
 
-.
+shell
 ├── Images
 ├── __pycache__
 ├── models
