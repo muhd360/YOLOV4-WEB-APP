@@ -2,6 +2,7 @@
 
 #### Project Root data structure
 
+![Flow+Diagram+for+Back-End Front-End drawio](https://github.com/user-attachments/assets/583af979-2f2f-4686-a4ae-ab1ddd00f5d2)
 
 ```
 shell
